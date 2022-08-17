@@ -41,6 +41,7 @@ jobs:
       LOW_TIMEOUT: "0.01"
       DRIVER: ruby
       REDIS_BRANCH: "7.0"
+      TRUFFLERUBYOPT: "--engine.Mode=latency"
     steps:
       - name: Check out code
         uses: actions/checkout@v3
